@@ -1,0 +1,53 @@
+body{
+  font-family: Arial,sans-serif;
+  margin:0;
+  padding:0;
+  background-image:url('https://i.pinimg.com/originals/20/f8/5e/20f85e5f3bd0b8af4d9eca662e878d17.jpg');
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+
+}
+.alumni-section {
+  text-align: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.join-network-button {
+  background-color: #007bff;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.join-network-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.happy-reunion {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #666;
+}
+
+.alumni-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.alumni-icons img {
+  width: 60px;
+  height: 60px;
+  margin: 0 10px;
+  border-radius: 50%;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}

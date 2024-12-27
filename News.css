@@ -1,0 +1,97 @@
+/* Base Styles */
+.news-section {
+  padding: 40px;
+  background-image: url('https://wallpaperaccess.com/full/9111714.png');
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.news-section h2 {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.news-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.news-section li {
+  padding: 15px 20px;
+  margin-bottom: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.news-section li:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.02);
+}
+
+.news-section li::before {
+  content: "📰";
+  margin-right: 10px;
+  font-size: 1.2rem;
+}
+
+.news-section p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .news-section {
+    padding: 20px;
+  }
+
+  .news-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .news-section li {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .news-section li::before {
+    font-size: 1rem;
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+
+  .news-section p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .news-section {
+    padding: 15px;
+  }
+
+  .news-section h2 {
+    font-size: 1.2rem;
+  }
+
+  .news-section li {
+    padding: 8px;
+  }
+
+  .news-section p {
+    font-size: 0.8rem;
+  }
+}

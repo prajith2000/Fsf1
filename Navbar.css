@@ -1,0 +1,58 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px; 
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Stack items vertically */
+    padding: 10px; /* Adjust padding */
+  }
+
+  .navbar ul {
+    flex-direction: column; /* Stack navigation links vertically */
+    gap: 10px; /* Adjust gap between links */
+    width: 100%; /* Take full width */
+    align-items: flex-start; /* Align items to the start */
+  }
+
+  .navbar a {
+    display: block; /* Make links block for easier clicking */
+    width: 100%; /* Full width for touch-friendly design */
+    padding: 8px 0; /* Add padding for touch targets */
+  }
+}
+
+/* Media query for very small screens (e.g., phones) */
+@media screen and (max-width: 480px) {
+  .navbar {
+    padding: 5px; /* Further reduce padding */
+  }
+
+  .navbar a {
+    font-size: 14px; /* Smaller font size for better fit */
+    padding: 5px 0; /* Adjust padding */
+  }
+}
